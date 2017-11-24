@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-geofence-background-geolocation-broadcast-receiver",
+  "version": "0.1.0",
+  "description": "",
+  "cordova": {
+    "id": "cordova-plugin-geofence-background-geolocation-broadcast-receiver",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "gps",
+    "location",
+    "tracking",
+    "geolocation",
+    "geofence",
+    "geofencing",
+    "background",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-wp8",
+    "cordova",
+    "phonegap"
+  ],
+  "author": "Carlos Vega",
+  "license": "MIT"
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-geofence-background-geolocation-broadcast-receiver"
+    version="0.1.0">
+
+    <name>Cordova BroadcastReceiver</name>
+    <description></description>
+    <license>MIT</license>
+    <keywords>cordova, phonegap, background geolocation, background, location, tracking, geofence, geofencing</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=5.0.0" />
+    </engines>
+
+     <!-- android -->
+    <platform name="android">
+        <source-file src="src/android/EventReceiver.java" target-dir="src/com/transistorsoft/cordova/bggeo" />
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <receiver android:name="com.alterx.cordova.geofence.receiver.TransitionReceiver">
+                <intent-filter>
+                    <action android:name="com.cowbell.cordova.geofence.TRANSITION" />
+                </intent-filter>
+            </receiver>
+        </config-file>
+     </platform>
+</plugin>
